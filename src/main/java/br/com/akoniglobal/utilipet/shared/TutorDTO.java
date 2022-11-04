@@ -2,14 +2,25 @@ package br.com.akoniglobal.utilipet.shared;
 
 import java.util.List;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 import br.com.akoniglobal.utilipet.model.Pet;
 
 public class TutorDTO {
     
     private String id;
+    @NotEmpty(message = "O campo nome não pode ser vazio")
+    @Size(min = 3, max = 40, message = "O campo nome contém o tamanho minimo de 3 e maximo de 40")
     private String name;
+    @NotBlank(message = "O campo email não pode estar em branco")
     private String email;
+    @Pattern(regexp = "^[0-9]{11}")
     private String phone;
+    @NotBlank(message = "A senha não pode ser nulo")
+    @Size(min = 6, max = 20, message = "A senha contém o tamanho minimo de 6 e maximo de 20")
     private String password;
     private String birthdayDate;
     private String zipcode;    
