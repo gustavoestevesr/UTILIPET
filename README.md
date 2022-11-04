@@ -7,9 +7,11 @@ Habilidades desenvolvidas no projeto
 - JAVA
 - POO
 - VSCode
+- POSTMAN
 - GIT e GITHUB
 - PADRÃO REST
 - API's
 - JSON
 - MONGO DB ATLAS
+- VALIDATION
 - DEPLOY HEROKU
